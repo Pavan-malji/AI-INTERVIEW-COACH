@@ -1,11 +1,9 @@
+import 'dotenv/config' // must be the very first import!
 import express from 'express'
 import cors from 'cors'
-import dotenv from 'dotenv'
 import mongoose from 'mongoose'
 import interviewRoutes from './routes/interview.js'
 import authRoutes from './routes/auth.js'
-
-dotenv.config()
 
 const app = express()
 //Middlewares
